@@ -1,21 +1,43 @@
 <template>
-  <div class="MePage">
+  <div class="homePage">
     <div>
       <van-button class="btn" type="primary">按钮</van-button>
       <van-button class="btn" type="primary">按钮</van-button>
       <van-button class="btn" type="primary">按钮</van-button>
       <van-button class="btn" type="primary">按钮</van-button>
-    </div>测试页面1
+    </div>
+    测试页面1
+
+    <v-footer></v-footer>
+
   </div>
 </template>
 
 <script>
-import Vue from "vue";
-import { Button, Cell } from "vant";
-Vue.use(Button);
+// import Vue from "vue";
+// import { Button, Cell } from "vant";
+// Vue.use(Button);
+// import { Footer } from "../components/Footer";
+import {
+    Field,
+    Cell,
+    CellGroup,
+    Button,
+    Row,
+    Col
+  } from 'vant';
+
 export default {
-  components: {},
-  name: "Me",
+  components: {
+    // "v-footer": Footer,
+    [Field.name]: Field,
+    [Cell.name]: Cell,
+    [CellGroup.name]: CellGroup,
+    [Button.name]: Button,
+    [Row.name]: Row,
+    [Col.name]: Col,
+  },
+  name: "home",
   data() {
     return {
       activeKey: 0,
@@ -50,16 +72,16 @@ export default {
     //     }
     //   }
     // );
-    this.$http
-      .post("login", { account: "zhaodong", password: "123456" })
-      .then(res => {});
+    // this.$http
+    //   .post("login", { account: "zhaodong", password: "123456" })
+    //   .then(res => {});
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-@import "../../assets/common.less";
+@import "../assets/common.less";
 .MePage {
   background-color: blue;
   width: 375px;

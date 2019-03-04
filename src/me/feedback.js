@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'amfe-flexible';
 import Vue from 'vue'
-import FeedBack from './component/FeedBack.vue';
+import FeedBack from './FeedBack.vue';
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

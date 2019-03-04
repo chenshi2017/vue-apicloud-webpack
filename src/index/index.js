@@ -6,11 +6,14 @@ import {
   Toast
 } from 'vant';
 Vue.use(Toast);
-import Index from './component/Index.vue';
+import  vfooter  from "../components/Footer";
+Vue.component('v-footer', vfooter);
+import home from './Index.vue';
 new Vue({
   el: '#root',
   components: {
-    Index
+    home,
+    // vfooter
   },
-  template: '<Index/>'
+  template: '<home/>'
 })

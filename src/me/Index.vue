@@ -1,6 +1,6 @@
 <template>
-  <div class="MePage">
-    <div class="header" :style="{backgroundImage:'url('+require('../../../static/mebg.png')+')'}">
+  <div class= "MePage">
+    <div class="header" :style="{backgroundImage:'url('+require('../../static/mebg.png')+')'}">
       <div class="head tc">
         我的
         <van-icon name="shezhi" class="setting fr"/>
@@ -52,7 +52,7 @@
         <van-cell title="购物卡" is-link>
           <van-icon name="gouwuqia" slot="icon"/>
           <template v-if="user.msg_of_card">
-            {{user.msg_of_card}}<img class="hongbao" src="../../assets/images/hongbao.svg" alt="">
+            {{user.msg_of_card}}<img class="hongbao" src="../assets/images/hongbao.svg" alt="">
           </template>
         </van-cell>
         <van-cell title="账户余额" is-link>
@@ -117,7 +117,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-  @import '../../assets/common.less';
+  @import '../assets/common.less';
 
   .header {
     height: 150px;
@@ -197,8 +197,8 @@
     }
   }
 
-  .pageContent {
-  }
+  // .pageContent {
+  // }
 
   .orderCont {
     padding: 10px 0;

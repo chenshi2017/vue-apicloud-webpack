@@ -6,7 +6,7 @@ import {
   Toast
 } from 'vant';
 Vue.use(Toast);
-import Index from './component/Index.vue';
+import Index from './Index.vue';
 /* eslint-disable no-new */
 new Vue({
   el: '#root',

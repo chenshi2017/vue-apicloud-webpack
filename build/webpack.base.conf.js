@@ -95,13 +95,13 @@ const configOptions = {
 }
 // 过滤打包文件，减少开发编译时间(仅打包配置后的入口文件)
 // 正则过滤匹配
-var regx = /(index\/index|home|class|bmap|me)/g;
+var regx = /(index\/index|home|class|bmap|me|login)/g;
 
 //获取多入口文件
 function getEntries() {
   glob.sync('./src/**/*.js').forEach(function (name) {
     var path = name.slice(name.lastIndexOf('src/') + 4, name.length - 3);
-    console.log(path);
+    console.log("path:", path);
     if (process.env.NODE_ENV !== 'production') {
       if (regx.test(name)) {
         regx.lastIndex = 0;

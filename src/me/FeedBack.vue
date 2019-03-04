@@ -107,7 +107,7 @@
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-  @import '../../assets/common.less';
+  @import '../assets/common.less';
 
   .pageContent {
     padding: 50px 0;
